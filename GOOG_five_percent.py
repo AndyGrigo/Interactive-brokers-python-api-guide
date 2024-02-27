@@ -70,7 +70,7 @@ def check_for_trade(df, contract):
 #Main
 app = IBapi()
 app.nextorderId = None
-app.connect('127.0.0.1', 7496, 123)
+app.connect('127.0.0.1', 4001, 1)
 
 #Start the socket in a thread
 api_thread = threading.Thread(target=run_loop)

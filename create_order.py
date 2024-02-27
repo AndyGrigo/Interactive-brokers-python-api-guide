@@ -38,7 +38,7 @@ def FX_order(symbol):
 	return contract
 
 app = IBapi()
-app.connect('127.0.0.1', 7497, 123)
+app.connect('127.0.0.1', 7496, 123)
 
 app.nextorderId = None
 
@@ -70,8 +70,8 @@ app.placeOrder(app.nextorderId, FX_order('EURUSD'), order)
 time.sleep(3)
 
 #Cancel order 
-print('cancelling order')
-app.cancelOrder(app.nextorderId)
+#print('cancelling order')
+#app.cancelOrder(app.nextorderId)
 
-time.sleep(3)
-app.disconnect()
+#time.sleep(3)
+#app.disconnect()
